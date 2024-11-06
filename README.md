@@ -1,0 +1,2 @@
+# CourseGen
+AI Course Generator

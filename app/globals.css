@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 0%; /* Set background to black */
+    --foreground: 0 0% 100%; /* Set text color to white */
+    --card: 0 0% 0%; /* Black card background */
+    --card-foreground: 0 0% 100%; /* White text on card */
+    --popover: 0 0% 0%; /* Black popover background */
+    --popover-foreground: 0 0% 100%; /* White text on popover */
+    --primary: 0 0% 100%; /* White primary text */
+    --primary-foreground: 0 0% 0%; /* Black primary text */
+    --secondary: 0 0% 20%; /* Very dark gray for secondary background */
+    --secondary-foreground: 0 0% 100%; /* White text for secondary */
+    --muted: 0 0% 20%; /* Very dark gray for muted */
+    --muted-foreground: 0 0% 70%; /* Light gray text for muted */
+    --accent: 0 0% 20%; /* Very dark gray for accent */
+    --accent-foreground: 0 0% 100%; /* White accent text */
+    --destructive: 0 62.8% 30.6%; /* Red can be kept as is */
+    --destructive-foreground: 0 0% 100%; /* White text for destructive */
+    --border: 0 0% 100%; /* White borders */
+    --input: 0 0% 100%; /* White input background */
+    --ring: 0 0% 100%; /* White ring color */
+    --radius: 0.5rem; /* Radius can remain unchanged */
+    --chart-1: 12 76% 61%; /* Keep existing chart colors */
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --background: 0 0% 0%; /* Dark background */
+    --foreground: 0 0% 100%; /* Light text */
+    --card: 0 0% 0%; /* Dark card */
+    --card-foreground: 0 0% 100%; /* Light text on dark card */
+    --popover: 0 0% 0%; /* Dark popover */
+    --popover-foreground: 0 0% 100%; /* Light text on popover */
+    --primary: 0 0% 100%; /* Light primary text */
+    --primary-foreground: 0 0% 0%; /* Dark primary text */
+    --secondary: 0 0% 20%; /* Very dark gray for secondary */
+    --secondary-foreground: 0 0% 100%; /* White text for secondary */
+    --muted: 0 0% 20%; /* Very dark gray for muted */
+    --muted-foreground: 0 0% 70%; /* Light gray text for muted */
+    --accent: 0 0% 20%; /* Very dark gray for accent */
+    --accent-foreground: 0 0% 100%; /* White accent text */
+    --destructive: 0 62.8% 30.6%; /* Red can be kept as is */
+    --destructive-foreground: 0 0% 100%; /* White text for destructive */
+    --border: 0 0% 100%; /* White borders */
+    --input: 0 0% 100%; /* White input background */
+    --ring: 0 0% 100%; /* White ring color */
+    --chart-1: 220 70% 50%; /* Keep existing chart colors */
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-black text-white; /* Set background to black and text to white */
+  }
+}
+
+/* Scrollbar styling */
+ ::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Background of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #1d4ed8, #9333ea, #6b21a8); /* Blue to purple gradient */
+  border-radius: 5px; /* Rounded corners for the scrollbar */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(90deg, #3b82f6, #a855f7, #9d174d); /* Slightly different gradient on hover */
+}
+
